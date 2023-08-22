@@ -6,6 +6,10 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
+@app.route('/cif/')
+def about():
+    return render_template('cif.html')
+    
 @app.route('/bt1')
 def bt1():
     print('BT 1')
